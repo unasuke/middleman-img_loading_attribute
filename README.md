@@ -1,5 +1,8 @@
 # Middleman::ImgLoadingAttribute
-[![Build Status on GitHub Actions](https://github.com/unasuke/middleman-img_loading_attribute/workflows/test/badge.svg)](https://github.com/unasuke/redcarpet-render-html_lazy_img/actions)
+[![Build Status on GitHub Actions](https://github.com/unasuke/middleman-img_loading_attribute/workflows/ubuntu/badge.svg)](https://github.com/unasuke/redcarpet-render-html_lazy_img/actions)
+[![Build Status on GitHub Actions](https://github.com/unasuke/middleman-img_loading_attribute/workflows/windows/badge.svg)](https://github.com/unasuke/redcarpet-render-html_lazy_img/actions)
+[![Build status](https://ci.appveyor.com/api/projects/status/yq5i4m3lcoyko2hs/branch/master?svg=true)](https://ci.appveyor.com/project/unasuke/middleman-img-loading-attribute/branch/master)
+[![CircleCI](https://circleci.com/gh/unasuke/middleman-img_loading_attribute/tree/master.svg?style=svg)](https://circleci.com/gh/unasuke/middleman-img_loading_attribute/tree/master)
 ![RubyGem version](https://badgen.net/rubygems/v/middleman-img_loading_attribute)
 ![MIT License](https://badgen.net/github/license/unasuke/middleman-img_loading_attribute)
 
