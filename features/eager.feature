@@ -1,4 +1,4 @@
-Feature: Auto
+Feature: Set loading="eager"
   Scenario: Should add 'eager'
     Given a successfully built app at "eager-app"
     When I cd to "build"
