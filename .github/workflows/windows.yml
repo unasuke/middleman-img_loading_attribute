@@ -1,0 +1,34 @@
+name: windows
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+  schedule:
+    - cron: '0 0 * * 0'
+jobs:
+  test:
+    strategy:
+      matrix:
+        ruby: ['2.4.x', '2.5.x', '2.6.x']
+      fail-fast: false
+    runs-on: windows-latest
+    name: Ruby ${{ matrix.ruby }} on Windows
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup ruby ${{ matrix.ruby }}
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          architecture: 'x64'
+      - name: Install latest bundler
+        run: gem install bundler
+        shell: powershell
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+        shell: powershell
+      - name: Run rake test
+        run: bundle exec rake test
+        shell: powershell
