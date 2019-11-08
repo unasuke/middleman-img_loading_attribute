@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/unasuke/middleman-img_loading_attribute'
   s.summary     = 'Specify "loading" attribute value to generated HTML from middleman'
   s.description = 'Specify "loading" attribute value to generated HTML from middleman'
+  s.license     = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
