@@ -4,5 +4,5 @@ Feature: Set loading="auto"
     When I cd to "build"
     Then the file "index.html" should contain:
       """
-      <img loading="auto"
+      loading="auto"
       """
