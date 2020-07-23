@@ -16,7 +16,7 @@ jobs:
         ruby: ['2.6.x', '2.5.x', '2.4.x']
     name: Ruby ${{ matrix.ruby }}
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Setup ruby ${{ matrix.ruby }}
         uses: actions/setup-ruby@v1
         with:
