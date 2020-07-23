@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
     name: Ruby ${{ matrix.ruby }} on Windows
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Setup ruby ${{ matrix.ruby }}
         uses: actions/setup-ruby@v1
         with:
