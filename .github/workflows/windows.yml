@@ -12,7 +12,7 @@ jobs:
   test:
     strategy:
       matrix:
-        ruby: ['2.4.x', '2.5.x', '2.6.x']
+        ruby: ['2.4.x', '2.5.x', '2.6.x', '2.7.x']
       fail-fast: false
     runs-on: windows-latest
     name: Ruby ${{ matrix.ruby }} on Windows
